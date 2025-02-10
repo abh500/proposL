@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Forever Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="fade-in">Can you tolerate me your whole life? 😜</p>
+        <button onclick="yesTolerate()">Yes</button>
+        <button onclick="noTolerate()">No</button>
+    </div>
+    <div id="laugh-message" class="hidden">
+        <p>😂 You have to tolerate me, there's no option, Mohtarma! You are mine only ❤️</p>
+    </div>
+    <script>
+        function yesTolerate() {
+            window.location.href = "next-question.html";
+        }
+
+        function noTolerate() {
+            document.getElementById("laugh-message").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
