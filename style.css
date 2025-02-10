@@ -1,58 +1,52 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center/cover;
     color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.container {
-    margin-top: 20vh;
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-.name {
-    font-size: 3em;
-    font-weight: bold;
-    animation: fadeIn 2s ease-in-out;
+p {
+    font-size: 1.5rem;
 }
 
-.question {
-    font-size: 1.5em;
-    margin-top: 20px;
-    animation: fadeIn 3s ease-in-out;
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
-button {
-    font-size: 1.2em;
-    padding: 10px 20px;
+.buttons button {
+    padding: 15px 30px;
     margin: 10px;
-    border: none;
-    border-radius: 10px;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
 }
 
-#yes-btn {
+button:first-child {
     background-color: green;
     color: white;
 }
 
-#no-btn {
+button:last-child {
     background-color: red;
     color: white;
 }
 
-#no-response {
-    font-size: 1.5em;
+.hidden {
+    display: none;
+    font-size: 2rem;
     color: pink;
     margin-top: 20px;
 }
 
-.hidden {
-    display: none;
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
