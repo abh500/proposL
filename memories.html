@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter My Heart ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="fade-in">Enter the 6-digit password to access our special memories:</p>
+        <input type="password" id="password" placeholder="Enter 6-digit password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="error-message" class="hidden">Wrong password! Try again.</p>
+    </div>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "730080") {
+                window.location.href = "memories-gallery.html";
+            } else {
+                document.getElementById("error-message").classList.remove("hidden");
+            }
+        }
+    </script>
+</body>
+</html>
