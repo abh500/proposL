@@ -3,20 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Shri ❤️</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Hey Shri, This is for You ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('background.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 1em;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: darkred;
+        }
+    </style>
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="do_anjaane.mp3" type="audio/mpeg">
+    </audio>
     <div class="container">
-        <h1 class="name">Vishakha Shrimali</h1>
-        <p class="question">Hey Shri, I love you more than anything. Do you love me? ❤️</p>
-        <div class="buttons">
-            <button id="yes-btn">Yes</button>
-            <button id="no-btn">No</button>
-        </div>
-        <p id="no-response" class="hidden">Still, I love you ❣️ forever.</p>
+        <h1>Hey Shri, this is for you. Do you want to enter my world? 🌎</h1>
+        <input type="password" id="password" placeholder="Enter 6-digit password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="message"></p>
     </div>
+
+    <script>
+        function checkPassword() {
+            var pass = document.getElementById('password').value;
+            if (pass === "730080") {
+                window.location.href = "proposal.html"; 
+            } else {
+                document.getElementById('message').innerHTML = "Try again! Enter the 6-digit password to enter my heart ❤️";
+            }
+        }
+    </script>
 </body>
 </html>
-
